@@ -1,0 +1,34 @@
+:root {--yellow: #FFCE33;}
+* {box-sizing: border-box;}
+
+body {display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #000;}
+
+.wrap {overflow: hidden; width: 340px; background-color: #fff; font-weight: bold; font-size: 12px;}
+
+header {display: flex; justify-content: space-between; padding: 30px 10px 50px 10px; background-color: var(--yellow);}
+h1 {font-size: 18px;}
+h2 {font-size: 20px; margin-bottom: 25px;}
+
+form:has(input[type="search"]) {margin-top: -25px; text-align: center;}
+input[type="search"] {width: 320px; height: 50px; padding: 10px 30px; background: #fff url('img/magnifying-glass-solid.svg') no-repeat center right 10px; border: 0; border-radius: 30px; box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.1)}
+input[type="search"]::placeholder {color: #e0e0e0;}
+
+.btn {width: 20px; height: 20px; padding: 0; border: 0; background-color: unset;}
+
+.content {padding: 30px 15px 0 15px;}
+.content section {margin-bottom: 25px;}
+
+.bookInfo {display: flex; gap: 15px;}
+.bookInfo__img {width: 105px; border-radius: 10px;}
+.bookInfo__title {margin-bottom: 10px; font-size: 18px; opacity: 0.7;}
+.bookInfo__author,
+.bookInfo p {font-size: 14px; color: #e0e0e0; line-height: 18px;}
+.bookInfo__star--sort {display: flex; align-items: center; gap: 2px; height: 10px; margin: 10px 0 20px 0;}
+.bookInfo__tag--sort {display: flex; justify-content: space-around; width: 100%;}
+.bookInfo__tag {padding: 5px 10px; background-color: #e0e0e0; border-radius: 5px; line-height: 15px;}
+.bookInfo__btn--sort {display: flex; justify-content: space-between; gap: 35px; margin-top: 25px;}
+.bookInfo__btn--bookMark {width: 35px; height: 35px; background-color: var(--yellow); border-radius: 50%;}
+.bookInfo__btn--black {width: 100px; height: 35px; background-color: #000; border-radius: 5px; color: #fff;}
+.bookInfo--sort {display: flex; gap: 25px;}
+.bookInfo--sort .bookInfo__star--sort{justify-content: center; margin-bottom: 0;}
+.bookInfo--sort .bookInfo__img {width: 70px;}
